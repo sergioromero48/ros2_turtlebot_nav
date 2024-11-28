@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>turtlebot_slam</name>
+  <version>0.1.0</version>
+  <description>A custom package for TurtleBot simulation and SLAM integration.</description>
+
+  <maintainer email="sergioromero48@outlook.com">Sergio Romero</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Dependencies for Gazebo simulation -->
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_plugins</depend>
+  <depend>gazebo_dev</depend>
+
+  <!-- TurtleBot-specific dependencies -->
+  <depend>turtlebot3_gazebo</depend>
+  <depend>turtlebot3_description</depend>
+  <depend>turtlebot3_msgs</depend>
+
+  <!-- SLAM-related dependencies -->
+  <depend>slam_toolbox</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- Python utilities -->
+  <depend>python3</depend>
+  <depend>cv_bridge</depend>
+
+  <!-- Optional testing tools -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
