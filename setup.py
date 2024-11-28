@@ -15,7 +15,8 @@ setup(
         # Include launch files
         ('share/' + package_name + '/launch', ['launch/spawn_turtlebot3_custom.launch.py']),
         ('share/' + package_name + '/launch', ['launch/turtlebot3_custom_house.launch.py']),
-
+        ('share/' + package_name + '/launch', ['launch/turtlebot3_custom_tb3wrld.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/turtlebot3_slam.launch.py']),
         # Include model files (SDF, config)
         ('share/' + package_name + '/models/custom_turtlebot3', [
             'models/custom_turtlebot3/model.sdf',
